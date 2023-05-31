@@ -66,6 +66,7 @@ La función de activación se elige de acuerdo con la tarea realizada por la neu
 
 ## Unos ejemplos de workflow de una red neuronal:
 
-![Workflow chart 1](https://www.researchgate.net/profile/Asaad-Nayyef/publication/264540434/figure/fig3/AS:296012653580306@1447586324792/Artificial-Neural-Network-Flowchart.png)
+![Workflow chart 1](https://github.com/PabloTCA/Works/assets/135001016/32738920-27a5-4bf6-bac4-3f00354f8f44)
+
 
 ![workflow chart 2](https://preview.redd.it/pgnetyyfj8m61.png?width=1363&format=png&auto=webp&v=enabled&s=9c0efc626a739fead2d0c56a08e6288ca327801f)

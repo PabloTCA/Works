@@ -70,3 +70,14 @@ La función de activación se elige de acuerdo con la tarea realizada por la neu
 
 
 ![workflow chart 2](https://preview.redd.it/pgnetyyfj8m61.png?width=1363&format=png&auto=webp&v=enabled&s=9c0efc626a739fead2d0c56a08e6288ca327801f)
+
+
+## Opciones de proyectos
+
+### Estudio de mercadotecnia:
+Objetivo: Saber que tipo de videojuego será popular y así poder lanzar al mercado un producto exitoso.
+Datos obtenidos de un dataset de kaggle:  Popular video games 1980 – 2023
+
+### Estudio de la Vid para viñedos
+Debido a la alta demanda de agricultura en el estado de sonora una buena implementación y a la vez automatización de los campos agrícolas sería el uso de drones para diferentes propósitos, como fumigar, revisar por medio de cámaras la cosecha etc. Si utilizamos cámaras también podemos hacer una red neuronal la cual nos indique si la planta se encuentra saludable o no mediante la comparación de fotografías que compare continuamente hasta que nos resuelva si bien la planta se encuentra saludable o si tiene algún daño y cual puede ser este daño.
+Datos: no encontrados

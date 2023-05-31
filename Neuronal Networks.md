@@ -36,7 +36,8 @@ A través del PLN se puede procesar texto natura, creado por humanos. Las redes 
 •	Análisis de inteligencia empresarial de documentos con formato largo, como lo son los emails y formularios
 •	Indexar frases claves que indiquen sentimientos como comentarios positivos y negativos en las redes sociales.
 
-Arquitectura de red neuronal profunda
+#### Arquitectura de red neuronal profunda
+
 ![arquitectura de red neuronal](https://d1.awsstatic.com/whatisimg/intro-gluon-1%20(1).ac2f31378926b5f99a4ba9d741c4aebe3b7a29e2.png)
  
 ## Tipos de redes neuronales
@@ -44,4 +45,22 @@ Arquitectura de red neuronal profunda
 Las redes neuronales prealimentadas procesan los datos en una dirección, la cual es desde el nodo de entrada hasta el de salida.
 Todos los nodos de la capa se encuentran conectados con todos los nodos de la siguiente capa. Utiliza un proceso de retroalimentación para mejorar las predicciones a lo largo del tiempo.
 ### Algoritmo de propagación:
+La forma de aprender de las redes neuronales artificiales es de manera continua, usando bucles de retroalimentación correctivos el cual mejorara su análisis predictivo. Recorre el camino de los datos que vienen desde el nodo de entrada hasta el nodo de salida a través de los diferentes caminos que se encuentran en la red neuronal. Como nomas hay un camino correcto la red neuronal usa un bucle de retroalimentación:
+1. Cada nodo intenta adivinar el siguiente nodo de la ruta.
+2. Se comprueba si la suposición es correcta. Los nodos asignan valores de peso mas altos a las rutas que conducen a mas suposiciones correctas y valores de peso mas bajo a las rutas que conduce a suposiciones incorrectas.
+3.	Para el siguiente punto de datos los nodos realizan una predicción nueva con las trayectorias de mayor peso y luego repiten.
+### Redes convolucionales
+Las capas ocultas en este tipo de redes neuronales realizan funciones matemáticas específicas, síntesis o filtrado, denominadas convoluciones. Esto las hace muy útiles para el reconocimiento y clasificación de imágenes. Es más fácil de procesar sin perder características que son fundamentales para hacer una buena predicción. Cada una de las capas ocultas extrae y procesa diferentes características de la imagen, los bordes, el color y la profundidad.
+
+## Matemáticas y esquema general
+Cada conexión neuronal tiene pesos y a estos pesos se les asignara una respectiva “w” ya sea “w1”, “w2” etc. Detrás de estos pesos se encuentra una conexión sináptica que seria en otras palabras la salida de otra neurona. Las salidas de las neuronas le asignamos una variable “y”.
+Entonces si asignamos a las conexiones de los pesos de nuestra neurona como “x1, x2…xn” tendremos que: “y=w1x1 + w2x2 + w3x3 + …. + wnxn” esta ecuación es un producto punto y se puede representar en forma vectorial como “y = wx” donde “w” y “x” son vectores. Además, a cada neurona le podemos agregar un offset el cual lo representaremos con b y nos quedaría una ecuación y=w^t x+b
+Para poder hacer un procesamiento básico en cascada donde cada neurona se encuentra conectada con otras neuronas, necesitamos que la salida de cada neurona sea una operación no lineal por lo tanto al valor anterior de “y” se le aplicara una función de activación no lineal, entonces la salida de la neurona será una activación y al concatenar muchas neuronas formando una red neuronal profunda el poder de representación será mucho más profundo.
+
+![Matematicas de una neurona](http://www.cs.us.es/~fsancho/images/2019-12/artneur.gif)
+
+### Funciones de activación
+La función de activación se elige de acuerdo con la tarea realizada por la neurona, entre las mas comunes de las RNAs podemos ver:
+
+![Funciones de activacion mas comunes](http://www.cs.us.es/~fsancho/images/2019-12/activationfunctions.png)
 
